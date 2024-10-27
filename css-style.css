@@ -1,0 +1,25 @@
+div{
+	height: 90px;
+	border-style: solid;
+	border-color: blue ;
+}
+#dashed{
+	border-style: dashed;
+	border-color: green;
+}
+#dotted{
+	border-style: dotted;
+	border-color: red;
+}
+#groove{
+	border-style: groove;
+	border-color: orange;
+}
+img{
+	border-style: dashed;
+	border-width: 1px;
+}
+ h1{
+ 	border: solid 100px;
+ 	color: blue;
+ }

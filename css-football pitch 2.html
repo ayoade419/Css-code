@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.greenTiles{
+			height: 700px;
+			width: 1500px;
+			background-color: green;
+			border-radius: 30px;
+			display: inline-block;
+			position: relative;
+			z-index: 10px;
+		}
+		.whiteTiles{
+			height: 600px;
+			width: 1370px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-left: 60px;
+			margin-top: -650px;
+			position: relative;
+			z-index: 103;
+		}
+		.vLine{
+			height: 600px;
+			width: 1px;
+			border: solid;
+			border-color: white;
+			background-color:white;
+			border: solid 1px white;
+			position: relative;left: 750px;
+			margin-top: -605px;
+			z-index: 106;
+		}
+		.circle{
+			height: 200px;
+			width: 200px;
+			border: solid;
+			border-radius: 100px;
+			border-color: white;
+			margin-top: -399px;
+			position: relative;left: 650px;
+			z-index: 108;
+		}
+		.square{
+			height: 200px;
+			width: 70px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-top: -220px;
+			margin-right: 100px;
+			position: relative;left: 60px;
+            z-index: 116;
+           
+		}
+		.plus{
+			height: 305px;
+			width: 170px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-top: -260px;
+			margin-right: 100px;
+			position: relative;left: 60px;
+            z-index: 112;
+		}
+		.secondSquare{
+			height: 200px;
+			width: 70px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-top: -260px;
+			margin-left: 100px;
+			position: relative;left: 1260px;
+            z-index: 116;
+		}
+		.secondPlus{
+			height: 305px;
+			width: 170px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-top: -250px;
+			margin-right: 100px;
+			position: relative;left: 1260px;
+            z-index: 112;
+		}
+		.dot{
+			height: 2px;
+			width: 2px;
+			border-radius: 10px;
+			border: solid;
+			border-color: white;
+			background-color: white;
+			margin-top: -170px;
+			margin-left: 130px;
+			position: relative;left: 65px;
+			z-index: 118;
+            		
+		}
+		.secondDot{
+			height: 2px;
+			width: 2px;
+			border-radius: 10px;
+			border: solid;
+			border-color: white;
+			background-color: white;
+			margin-top: -10px;
+			margin-left: 250px;
+			position: relative;left: 1050px;
+			z-index: 120;
+		}
+		.anotherDot{
+			height: 2px;
+			width: 2px;
+			border-radius: 10px;
+			border: solid;
+			border-color: white;
+			background-color: white;
+			margin-top: 5px;
+			margin-left: -302px;
+			position: relative;left: 1050px;
+			z-index: 120;
+		}
+		.semi-circle{
+			height: 200px;
+			width: 200px;
+			border: solid;
+			border-radius: 100px;
+			border-color: white;
+			margin-top: -110px;
+			position: relative;left: 1190px;
+			z-index: 108;
+		}
+		.secondSemi-circle{
+			height: 200px;
+			width: 200px;
+			border: solid;
+			border-radius: 100px;
+			border-color: white;
+			margin-top: -210px;
+			position: relative;left: 95px;
+			z-index: 108;
+		}
+		   .thirdSquare{
+         	height: 70px;
+			width: 35px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-top: -137px;
+			margin-left: -1280px;
+			position: relative;left: 1300px;
+            z-index: 122;
+         }	
+		.fourthSquare{
+		   height: 70px;
+			width: 35px;
+			border: solid;
+			border-color: white;
+			background-color: green;
+			margin-top: -90px;
+			margin-left: 134px;
+			position: relative;left: 1300px;
+            z-index: 122;	
+		}
+		.firstCircle{
+			height: 30px;
+			width: 30px;
+			border: solid;
+			border-radius: 15px;
+			border-color: black;
+			margin-top: -394px;
+			margin-left: 47px;
+			position: relative;
+			z-index: 126;
+
+		}
+		.secondCircle{
+			height: 30px;
+			width: 30px;
+			border: solid;
+			border-radius: 15px;
+			border-color: black;
+			margin-top: 560px;
+			margin-left: 47px;
+			position: relative;
+			z-index: 128;
+		}
+		.thirdCircle{
+			height: 30px;
+			width: 30px;
+			border: solid;
+			border-radius: 15px;
+			border-color: black;
+			margin-top: -35px;
+			margin-left: 1415px;
+			position: relative;
+			z-index: 126;
+
+		}
+		.fourthCircle{
+			height: 30px;
+			width: 30px;
+			border: solid;
+			border-radius: 15px;
+			border-color: black;
+			margin-top: ;
+			margin-left: ;
+			position: relative;
+			z-index: 128;
+		}
+			span{
+			height: 70px;
+			width: 70px;
+			border-radius: 50px;
+			display: block;
+			background-color: darkblue;
+			margin-left: 500px;
+			margin-top: -100px;
+			position: relative;left: 30px;
+			z-index: 134;
+			transition-property: left 3s, background-color 10s;
+			left: 0;
+			transition-duration: 5s;
+		}
+		div:hover> span{
+			position: relative;
+			background-color: red;
+			left: 864px;
+			transition-timing-function: linear;
+			transition-delay: 2s;
+
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="greenTiles"></div>
+		<div class="whiteTiles"></div>
+		<div class="vLine"></div>
+		<div class="circle"></div>
+		<div class="square"></div>
+		<div class="plus"></div>
+		<div class="secondSquare"></div>
+		<div class="secondPlus"></div>
+		<div class="dot"></div>
+		<div class="secondDot"></div>
+		<div class="anotherDot"></div>
+		<div class="semi-circle"></div>
+		<div class="secondSemi-circle"></div>
+		<span></span>
+	</div>
+		<div class="firstCircle"></div>
+		<div class="secondCircle"></div>
+		<div class="thirdCircle"></div>
+		<div class="fourthCircle"></div>
+		
+	
+</body >
+</htm

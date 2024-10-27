@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			height: 500px;
+			width: 500px;
+			border: solid;
+		}
+		span{
+			height: 50px;
+			width: 50px;
+			display: block;
+			background-color: orangered;
+			border-radius: 25px;
+			margin-top: 449.9px;
+			animation: movesideways 3s infinite ease-in-out;
+			position: relative;
+			animation-iteration-count: infinite;
+    		animation-direction: alternate;
+           	transition: left;
+           	top: 0px;
+		}
+		
+		@keyframes movesideways{
+			0%{
+				left: 0;
+			}
+			50%{
+				left: 450px;
+			} 
+			100%{
+				left: 0;
+			}
+		}
+		div:hover> span{
+			transition: top 3s;
+			top: -400px;
+		}
+		@keyframes top{/
+			from{
+				top: 0;
+			}
+			to{
+				top: 400px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span></span>
+	</div>
+</body>
+</html>

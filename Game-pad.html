@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#holder{
+			height: 300px;
+			width: 500px;
+			background-color: yellow;
+			border-radius: 50px;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			margin-left: 700px;
+			margin-top: 200px;
+		}
+		#top{
+			width: 100px;
+			height: 50px;
+			background-color: red;
+			margin-left: 100px;
+			margin-top: 20px;
+			margin-left: 30px;
+			transition: top 2s;
+		}
+		#bottom{
+			width: 100px;
+			height: 50px;
+			background-color: red;
+			margin-left: 100px;
+			margin-top: 20px;
+			margin-left: 245px;
+			position: absolute;
+			}
+		#left{
+			width: 100px;
+			height: 50px;
+			background-color: red;
+			margin-left: 100px;
+			margin-top: 135px;
+			margin-left: 30px;
+		}
+		#right{
+			width: 100px;
+			height: 50px;
+			background-color: red;
+			margin-left: 100px;
+			margin-top: 20px;
+			margin-left: 240px;
+		}
+		#ball{
+			width: 60px;
+			height: 60px;
+			background-color: blue;
+			margin-top: 100px;
+			position: absolute;
+			transition: width 5s,height 5s,border-radius 5s;
+			top: 40px;
+			margin-left: 80px;
+			margin-top: 30px;
+			border-radius: 30px; 
+		}
+		div{
+			height: 722px;
+			width: 1510px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div id="ball" style="top: 40px; bottom: 40px; left: 40px; right: 40px;" ></div>
+		<input type="number" name="" onkeyup="changeHeightWidthtBorderRadius(this.value)">
+		<!-- <button style="margin-left: 50px;">Height</button>
+		<button>width</button> -->
+	</div>
+	<div id="holder">
+		<button id="top" onclick="moveup()">up</button>
+		<button id="bottom" onclick="moveDown()">down</button><br>
+		<button id="left" onclick="moveleft()">left</button>
+		<button id="right" onclick="moveright()">right</button>
+	</div>
+	<input type="number" name="" style="position: relative; bottom: 15px; position: absolute; margin-left: 500px;margin-bottom: 250px;"id="increaseValue">
+	<script type="text/javascript">
+		function moveup() {
+			var increaseValue = parseInt(document.getElementById('increaseValue').value);
+			var topPosition = parseInt(document.getElementById('ball').style.top);
+			document.getElementById('ball').style.top = (topPosition - increaseValue) +"px";
+		}
+		function moveDown(){
+			var increaseValue = parseInt(document.getElementById('increaseValue').value);
+			var bottomPosition = parseInt(document.getElementById('ball').style.top);
+			document.getElementById('ball').style.top = (bottomPosition + increaseValue) + "px"
+		} 
+		function moveleft() {
+			var increaseValue = parseInt(document.getElementById('increaseValue').value);
+			var leftPosition = parseInt(document.getElementById('ball').style.left);
+			document.getElementById('ball').style.left = (leftPosition - increaseValue) + "px"
+		}
+		function moveright() {
+			var increaseValue = parseInt(document.getElementById('increaseValue').value);
+			var rightPosition = parseInt(document.getElementById('ball').style.left);
+			//alert(rightPosition+2)
+			document.getElementById('ball').style.left = (rightPosition + increaseValue) + "px"
+		}
+		function init(){
+			// alert('head');
+			document.getElementById('ball').style.width = 100 +'px';
+			document.getElementById('ball').style.height = 100 +'px';
+			document.getElementById('ball').style.borderRadius = 50 +'px';
+		}
+		init();
+		function changeHeightWidthtBorderRadius(changeHeightWidthtBorderRadius){
+			let ball = document.getElementById('ball');
+			ball.style.height = heightWidthBorderRadius +"px";
+			ball.style.width = heightWidthBorderRadius + "px";
+			ball.style.borderRadius = heightWidthBorderRadius + "px";
+		}
+	</script>
+</body>
+</html>s

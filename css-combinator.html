@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css-combinator</title>
+	<style type="text/css">
+
+		 descendant selector 
+		div p{
+			color: yellow;
+
+		}
+		/* child selector */
+		div> p{
+			font-size: 50px;
+
+		}
+		/*child selector */
+		span> p{
+			color: orangered;
+		}
+		/* child selector */
+
+		div > span > p{
+			font-size: 20px;
+
+		}
+
+		/*desendant selector*/
+		ol li{
+				color: blueviolet;
+		}
+		/*descendant selector*/
+		ul li{
+			color: orangered;
+		}
+		.second-list li{
+			color: orangered;
+		}
+		#secondList li{
+			color: limegreen;
+		}
+		span + p{
+			background-color: chocolate;
+
+		}
+		span + p + p{
+			background-color: blueviolet;
+		}
+		span ~ p{
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<p>My brother is the worst</p>
+		<span>
+			<p>Dont be sad</p>
+		</span>
+	</div>
+
+		<span>
+			<p>Dont be sad</p>
+		</span>
+
+	<p>My brother is very stupid,he is very dull and such an idiot</p>
+	<p>awon eya juda</p>
+	<p>Odered list of fruits</p>
+	<ol>
+		<li>Mango</li>
+		<li>Mango</li>
+		<li>Mango</li>
+		</ol>
+
+	<ol class="second-list">
+		<li>Mango</li>
+		<li>Mango</li>
+		<li>Mango</li>
+	</ol>
+
+	<ol id="secondList">
+		<li>Mango</li>
+		<li>Mango</li>
+		<li>Mango</li>
+	</ol>
+
+	<p>un Odered list of fruits</p>
+	<ul>
+		<li>Mango</li>
+		<li>Mango</li>
+		<li>Mango</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pseudo-class</title>
+	<style type="text/css">
+		img{
+			height: 15px;
+			display: block;
+		}
+		img:hover{
+			height: 300px;
+		}
+
+		
+		p{
+			color: pink;
+		}
+		input:focus div +p{
+			color: red;
+			font-size: 20px;
+		}
+		input:focus{
+			border: solid red;
+			background-color: black;
+			color: white;
+			outline: red;
+			width: 900px;
+
+		}
+		 p{
+			color: darkred;
+		}
+	</style>
+</head>
+<body>
+	<img src="abdullateef.jfif">
+   <p>I am writing a composition about my brother</p>
+   <input type="text" name="">
+   <div>
+   	 <p>This is my paragraph</p>
+   </div>
+</body>
+</html>
